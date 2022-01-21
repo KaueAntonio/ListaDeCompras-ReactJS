@@ -1,9 +1,9 @@
-import * as React from 'react';
+
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import { Avatar, Button } from '@mui/material';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+import {Avatar, Button} from '@mui/material';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import ButtonUnstyled from '@mui/base/ButtonUnstyled';
 
 const SimplePaper = () =>  {
   return (
@@ -18,7 +18,7 @@ const SimplePaper = () =>  {
         <Box className='texto2'>Preço: R$ 0.00</Box>
         </Box>
         </Box>
-        <Button variant="outlined" className='botaoComprar'><ShoppingCartCheckoutIcon/>Adicionar no Carrinho</Button>
+        <ButtonUnstyled className='botaoComprar'><AddShoppingCartIcon/>Adicionar no Carrinho</ButtonUnstyled>
         </Paper>
       
     </Box>

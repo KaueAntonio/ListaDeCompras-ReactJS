@@ -2,6 +2,7 @@ import * as React from 'react';
 import { styled, Box } from '@mui/system';
 import ModalUnstyled from '@mui/base/ModalUnstyled';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import SimplePaper2 from '../ItemListaCarrinho';
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -27,12 +28,14 @@ const Backdrop = styled('div')`
 `;
 
 const style = {
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  width: 1000,
+  height: 750,
+  bgcolor: 'white',
   p: 2,
   px: 4,
   pb: 3,
+  borderRadius: 5,
+  overflowY: 'scroll', 
 };
 
 export default function ModalUnstyledDemo() {
@@ -53,8 +56,20 @@ export default function ModalUnstyledDemo() {
         BackdropComponent={Backdrop}
       >
         <Box sx={style}>
-          <h2 id="unstyled-modal-title">Text in a modal</h2>
-          <p id="unstyled-modal-description">Aliquid amet deserunt earum!</p>
+        <div className='corpo'>
+    
+     <h1>Carrinho</h1>
+     <div className='lista'>
+
+     <SimplePaper2/>
+     <SimplePaper2/>
+     <SimplePaper2/>
+     <SimplePaper2/>
+     <SimplePaper2/>
+     <SimplePaper2/>
+     </div>
+     <h3>Total: R$ 0,00</h3>
+   </div>
         </Box>
       </StyledModal>
     </div>

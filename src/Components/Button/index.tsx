@@ -1,13 +1,23 @@
-
+import DeleteIcon from '@mui/icons-material/Delete';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
-export default function BasicButtons() {
+
+const BotaoC = () => {
   return (
-    <Stack spacing={2} direction="row">
-      <Button variant="text">Text</Button>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button>
-    </Stack>
+    
+      <Button className='botaoComprar' variant="outlined"><AddShoppingCartIcon/>Adicionar no Carrinho</Button>
+    
   );
 }
+
+const BotaoV = () => {
+  return (
+    
+      <Button className='botaoVender' variant="outlined"><DeleteIcon/>Remover Produto</Button>
+    
+  );
+}
+
+export default {BotaoC, BotaoV};
