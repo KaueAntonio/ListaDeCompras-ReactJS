@@ -1,26 +1,22 @@
 import "../index.css";
-import SimplePaper from "../Components/ItemLista";
 import Carrinho from "../Components/Modal";
+import BoxProdutos from "../Components/ItemLista";
+
 
 const App = () => {
+
   return (
 
     <div className='corpo'>
-     <Carrinho/>
-     <h1>Lista de Produtos</h1>
-     <div className='lista'>
+      <Carrinho />
+      <h1>Lista de Produtos</h1>
+      <div className='lista'>
+        <BoxProdutos/>
+      </div>
 
-     <SimplePaper/>
-     <SimplePaper/>
-     <SimplePaper/>
-     <SimplePaper/>
-     <SimplePaper/>
-     <SimplePaper/>
-     </div>
-   </div>
-   
-   
+    </div>
+
   );
-};
+}
 
 export default App;

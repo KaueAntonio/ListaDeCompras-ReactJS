@@ -76,7 +76,7 @@ code {
   align-items: center;
   height: 9vh;
   width: 50vw;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -85,13 +85,16 @@ code {
 
 .container{
   display: flex;
+
   width: 98%;
-  padding: 13px;
-  margin-bottom: 3px;
+  padding: 5px;
 }
 
 .av{
   margin-right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
 }
 
 .np{
@@ -125,6 +128,9 @@ code {
   flex-direction: column;
 }
 
+.texto1{
+  font-size: 15px;
+}
 
 h1{
   margin-left: 7vw;
